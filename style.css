@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: hsl(210, 46%, 95%);
+    font-family:Outfit;
+}
+
+
+.layer1{
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    width: 70vw; 
+}
+
+.cards{
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card1{
+   
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.card2{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.card5{
+    
+    background-color: hsl(0, 0%, 100%) ;
+}
+
+.card3{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.card4{
+    
+    background-color:  hsl(219, 29%, 14%);
+    color:hsl(0, 0%, 100%);
+}
+
+.quote{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.review{
+    opacity: 0.7;
+}
+
+.second{
+    opacity: 0.5;
+    font-size: 0.8em;
+    margin-top: -1em;
+}
+
+img{
+    border-radius: 50%;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: max-content;
+}
+
+p{
+    font-size: 13px;
+}
+
+@media only screen and (min-width:600px){
+    .card5{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-row-end: 3;
+    }
+    .card4{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .card1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
